@@ -1,0 +1,24 @@
+.board{
+    width: 400px;
+    height: 400px;
+    background-color: beige;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cells{
+    background-color: bisque;
+    box-shadow: 0px 0px 1px 0px black inset;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.cells:hover{
+    background-color: burlywood;
+}
+
+[data-type="bomb"]{
+    /*background-color: red;*/
+}

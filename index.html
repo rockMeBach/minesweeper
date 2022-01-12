@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Minesweeper</title>
+        <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body>
+        <h1>Basic Minesweeper Game</h1>
+        <div class="board"></div>
+        <p><strong>How it works?</strong></p>
+        <ul>
+            <li>It generates a board randomly via Vanilla JS, consisting of 80 valid cells and 20 mines</li>
+            <li>When clicked on any cell, it first checks how many mines exist around it and then greys it out and displays the number of mines around it on that very cell</li>
+            <li>If it turns out that the cell is a mine, it shows all the bombs in red, alerts game over and reloads the page</li>
+            <li>If it turns out that the cell is empty, it recursively looks for empty cells around the cell that the player just clicked and greys them out</li>
+            <li>If any of the cells around that empty cell is not empty, it does the usual(greys it out and shows the number of adjacent mines)</li>
+        </ul>
+    </body>
+</html>
